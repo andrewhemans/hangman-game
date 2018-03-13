@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+    <!-- <link rel="shortcut icon" href="assets/vulcan.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="assets/vulcan.ico" type="image/x-icon"> -->
+
+    <title>A Fistful of Datas</title>
+  </head>
+  <body class="bg-light">
+
+    <article>
+    <header>
+      <h1>A Fistful of Datas</h1>
+    </header>
+    <section>
+      <nav>
+        <ul id="nav-list">
+          <li>&nbsp;</li>
+          <li id="start-game" onclick="startGame()">Start Game</li>
+          <li id="give-up">Give Up</li>
+          <li id="reset-scores" onclick="resetScores()">Reset Scores</li>
+          <li>
+            <div id="wins">
+              <div class="score-title">Score</div>
+              <div id="score">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <main>
+
+        <div id="begin">
+          <p>Press start game to begin</p>
+          <!-- <div class="button">Play Again</div> -->
+        </div>
+        <div id="main-game">
+        <h2>Guess a name</h2>
+        <figure class="correct-guess">
+          <div id="game">
+          </div>
+          <div id="blank"></div>
+          <figcaption>
+          </figcaption>
+        </figure>
+
+        <h2>Wrong Guesses</h2>
+        <figure>
+          <div id="guesses">
+          </div><br />
+          <div id="wrong-guess">
+          </div>
+        <figcaption>
+        </figcaption>
+        </figure>
+
+      </div>
+      </main>
+    </section>
+    <footer>
+      <h1>USS Stargazer &nbsp;*&nbsp; NCC-2893</h1>
+    </footer>
+  </article>
+
+  </body>
+</html>
