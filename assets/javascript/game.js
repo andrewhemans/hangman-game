@@ -1,4 +1,4 @@
-console.log("it's alive!")
+// console.log("it's alive!")
 
 // Create a library of names for characters in Star Trek
 
@@ -89,11 +89,10 @@ function startGame() {
   // testing adding new element
   function showImage() {
     if (document.getElementById("char-image")) {
-      // console.log('image already exists');
+
     } else {
       var targetDiv = document.getElementById("blank");
       var newDiv = document.createElement("div");
-      // newDiv.textContent = "A pleasure to meet you!";
 
       var image = document.createElement("IMG");
       image.setAttribute("src", "assets/images/" + computerGuess + ".png");
@@ -208,18 +207,13 @@ function startGame() {
   }
 
   var userGuess;
-  // var keepTyping = true;
-
 
   // when a user presses a key check to see if that letter is in the names
   // This function is run whenever the user presses a key.
   document.onkeyup = function(event) {
 
-
-    // console.log(indices);
-
     if (document.getElementById("char-image")) {
-      console.log('typing stopped');
+
     } else {
 
       // Determines which key was pressed.
@@ -248,11 +242,10 @@ function startGame() {
 
         if (wrong.indexOf(userGuess) > -1) {
           // do nothing
-          console.log('double letter!');
         } else {
           // if guessed letter does not match any letter in the name then logged that letter as a failed guessed
           wrong.push(userGuess);
-          // console.log(wrong);
+
         }
 
       }
@@ -286,7 +279,6 @@ function startGame() {
 
       // user can have 13 wrong guesses before they lose the game.
       else if (wrong.length === 9) {
-        // console.log('you lose');
         losses++;
         showImage();
         scoreLoss();
